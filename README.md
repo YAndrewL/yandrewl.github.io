@@ -1,3 +1,5 @@
 # Home Page
 
-The design of the index page is inspired by [Tim Kucera](https://timkucera.github.io).
+Thanks [Towaki Takikawa](https://tovacinni.github.io/) for building this amazing template!
+
+Original repository: https://github.com/tovacinni/research-website-template

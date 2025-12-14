@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import { Talks } from "@/data/talks";
 
 export function TalksEntry({ talks }: { talks: Talks }) {

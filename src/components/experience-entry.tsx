@@ -1,5 +1,4 @@
 import React from "react";
-import type { JSX } from "react";
 import { Experience } from "@/data/experience";
 
 export function ExperienceEntry({ experience }: { experience: Experience }) {

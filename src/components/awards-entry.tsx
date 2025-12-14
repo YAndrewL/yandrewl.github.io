@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import { Awards } from "@/data/awards";
 
 export function AwardsEntry({ awards }: { awards: Awards }) {

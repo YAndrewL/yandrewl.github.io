@@ -1,6 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
 import { News } from "@/data/news";
-import { useState } from "react";
 
 export function NewsEntry({ news }: { news: News }) {
     return (

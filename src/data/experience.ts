@@ -12,7 +12,7 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
     {
-        date: "Oct 2024 - Present",
+        date: "Oct 2024 - Dec 2025",
         title: "Machine Learning Researcher",
         company: "Guang'anmen Hospital, China Academy of Chinese Medical Sciences",
         description: "Machine learning methods for cardiovascular diseases",

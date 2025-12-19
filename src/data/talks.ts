@@ -23,8 +23,8 @@ export const talksData: Talks[] = [
         location: "Beijing"
     },
     {
-        year: "2015",
-        conference: "ISCB-Asia 2025",
+        year: "2025",
+        conference: "GIW ISCB-Asia 2025",
         poster: "poster",
         description: "SpaFormer: A multi-modal foundation model for spatial proteomics",
         location: "HK"

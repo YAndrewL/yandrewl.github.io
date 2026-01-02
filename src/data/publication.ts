@@ -59,7 +59,7 @@ export const publicationData: Publication[] = [
     {
         year: "2019",
         conference: "PLoS Biology",
-        title: "RNA editing restricts hyperactive ciliary kinases",
+        title: "Spectrin-based membrane skeleton supports ciliogenesis",
         authors: "Ru Jia<sup>#</sup>, Dongdong Li<sup>#</sup>, Ming Li<sup>#</sup>, Yongping Chai, <strong>Yufan Liu</strong>, Zhongyun Xie, Wenxin Shao, Chao Xie, Liuju Li, Xiaoshuai Huang, Liangyi Chen, Wei Li and Guangshuo Ou<sup>*</sup>",
         paperUrl: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000369",
         imageUrl: "/images/plosbio2019.png"

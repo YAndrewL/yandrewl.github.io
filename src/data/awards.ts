@@ -8,10 +8,6 @@ export interface Awards {
 export const awardsData: Awards[] = [
     // If you don't want to show awards, just make the array empty.
     {
-        date: "Mar 2025",
-        description: "Postgraduate Scholarships, The University of Hong Kong",
-    },
-    {
         date: "Oct 2022",
         description: "Certificate, Tsinghua University Big Data Capability Improvement Project",
     },

@@ -12,10 +12,6 @@ export const newsData: News[] = [
         description: "<a href='https://link.springer.com/protocol/10.1007/978-1-0716-4623-6_18'>CLAPE protocol</a> is published in Methods in Molecular Biology.",
     },
     {
-        date: "Mar 2025",
-        description: "Start as a Ph.D. student at HKU.",
-    },
-    {
         date: "Nov 2024",
         description: "<a href='https://jcheminf.biomedcentral.com/articles/10.1186/s13321-024-00920-2'>CLAPE-SMB</a> is published in Journal of Cheminformatics.",
     },

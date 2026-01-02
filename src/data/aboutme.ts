@@ -37,5 +37,5 @@ export const aboutMe: AboutMe = {
     cvUrl: "/files/cv.pdf",
     institutionUrl: "https://www.hku.hk",
     // altName: "",
-    secretDescription: "Address: HW307, Haking Wong Building, The University of Hong Kong",
+    secretDescription: "The University of Hong Kong",
 };

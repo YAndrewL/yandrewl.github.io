@@ -103,7 +103,7 @@ export default function Home() {
                                         publicationData.length > 0 && (
                                             <section key={sectionName}>
                                                 <h2 className="font-serif text-l mb-2 tracking-wide uppercase">
-                                                    Publications
+                                                    Selected Publications
                                                 </h2>
                                                 <p className="text-sm text-zinc-700 mb-8"><sup>#</sup> denotes equally contributed, <sup>*</sup> denotes corresponding author.
 

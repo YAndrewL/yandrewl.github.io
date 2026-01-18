@@ -14,16 +14,16 @@ export interface Publication {
 
 export const publicationData: Publication[] = [
     // If you don't want to show publications, just make the array empty.
-    {
-        year: "2025",
-        conference: "Methods in Molecular Biology",
-        title: "CLAPE: Protein-Ligand Binding Site Prediction via Protein Language Models",
-        authors: "<strong>Yufan Liu</strong> and Boxue Tian<sup>*</sup>",
-        paperUrl: "https://link.springer.com/protocol/10.1007/978-1-0716-4623-6_18",
-        codeUrl: "https://pypi.org/project/clape/",
-        award: "Invited book chapter",
-        imageUrl: "/images/metmol2025.jpg"
-    },
+    // {
+    //     year: "2025",
+    //     conference: "Methods in Molecular Biology",
+    //     title: "CLAPE: Protein-Ligand Binding Site Prediction via Protein Language Models",
+    //     authors: "<strong>Yufan Liu</strong> and Boxue Tian<sup>*</sup>",
+    //     paperUrl: "https://link.springer.com/protocol/10.1007/978-1-0716-4623-6_18",
+    //     codeUrl: "https://pypi.org/project/clape/",
+    //     award: "Invited book chapter",
+    //     imageUrl: "/images/metmol2025.jpg"
+    // },
     {
         year: "2024",
         conference: "Journal of Cheminformatics",
@@ -56,14 +56,14 @@ export const publicationData: Publication[] = [
         codeUrl: "https://github.com/YAndrewL/Quiclick",
         imageUrl: "/images/science2021.jpg",
     },
-    {
-        year: "2019",
-        conference: "PLoS Biology",
-        title: "Spectrin-based membrane skeleton supports ciliogenesis",
-        authors: "Ru Jia<sup>#</sup>, Dongdong Li<sup>#</sup>, Ming Li<sup>#</sup>, Yongping Chai, <strong>Yufan Liu</strong>, Zhongyun Xie, Wenxin Shao, Chao Xie, Liuju Li, Xiaoshuai Huang, Liangyi Chen, Wei Li and Guangshuo Ou<sup>*</sup>",
-        paperUrl: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000369",
-        imageUrl: "/images/plosbio2019.png"
-    },
+    // {
+    //     year: "2019",
+    //     conference: "PLoS Biology",
+    //     title: "Spectrin-based membrane skeleton supports ciliogenesis",
+    //     authors: "Ru Jia<sup>#</sup>, Dongdong Li<sup>#</sup>, Ming Li<sup>#</sup>, Yongping Chai, <strong>Yufan Liu</strong>, Zhongyun Xie, Wenxin Shao, Chao Xie, Liuju Li, Xiaoshuai Huang, Liangyi Chen, Wei Li and Guangshuo Ou<sup>*</sup>",
+    //     paperUrl: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000369",
+    //     imageUrl: "/images/plosbio2019.png"
+    // },
     {
         year: "2025",
         conference: "bioRxiv",
@@ -74,21 +74,21 @@ export const publicationData: Publication[] = [
         imageUrl: "/images/Eva_model_structure.png",
         preprint: "Preprint"
     },
-    {
-        year: "2025",
-        conference: "medRxiv",
-        title: "Residual Cardiovascular Risk Prediction in Statin-Treated Patients Using Machine Learning and Biomarker Analysis",
-        authors: "<strong>Yufan Liu</strong><sup>#</sup>, Yuhan Yang<sup>#</sup>, Tong Tong, Xiaoxiao Zhang, Zhang Jin, Mengwen Huang, Wenjie Liu, Zhenqin Wu, Ziyi Sun, Kuiwu Yao<sup>*</sup>",
-        // paperUrl: "",
-        preprint: "Preprint"
-    },
-    {
-        year: "2024",
-        conference: "bioRxiv",
-        title: "Exploring Protein-DNA Binding Residue Prediction and Consistent Interpretability Analysis Using Deep Learning",
-        authors: "<strong>Yufan Liu</strong><sup>*</sup>",
-        paperUrl: "https://www.biorxiv.org/content/10.1101/2024.10.12.613667v1.abstract",
-        preprint: "Preprint"
-    },
+    // {
+    //     year: "2025",
+    //     conference: "medRxiv",
+    //     title: "Residual Cardiovascular Risk Prediction in Statin-Treated Patients Using Machine Learning and Biomarker Analysis",
+    //     authors: "<strong>Yufan Liu</strong><sup>#</sup>, Yuhan Yang<sup>#</sup>, Tong Tong, Xiaoxiao Zhang, Zhang Jin, Mengwen Huang, Wenjie Liu, Zhenqin Wu, Ziyi Sun, Kuiwu Yao<sup>*</sup>",
+    //     // paperUrl: "",
+    //     preprint: "Preprint"
+    // },
+    // {
+    //     year: "2024",
+    //     conference: "bioRxiv",
+    //     title: "Exploring Protein-DNA Binding Residue Prediction and Consistent Interpretability Analysis Using Deep Learning",
+    //     authors: "<strong>Yufan Liu</strong><sup>*</sup>",
+    //     paperUrl: "https://www.biorxiv.org/content/10.1101/2024.10.12.613667v1.abstract",
+    //     preprint: "Preprint"
+    // },
 
 ];

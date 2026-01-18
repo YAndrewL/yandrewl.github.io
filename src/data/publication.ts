@@ -25,6 +25,16 @@ export const publicationData: Publication[] = [
     //     imageUrl: "/images/metmol2025.jpg"
     // },
     {
+        year: "2025",
+        conference: "bioRxiv",
+        title: "Modeling patient tissues at molecular resolution with Eva",
+        authors: "<strong>Yufan Liu</strong>, Rishabh Sharma, Matthew Bieniosek, Amy Kang, Eric Wu, Peter Chou, Irene Li, Maha Rahim, Erica Bauer, Ran Ji, Wei Duan, Li Qian, Ruibang Luo, Padmanee Sharma, Renu Dhanasekaran, Christian M. Schürch, Gregory Charville, Aaron Mayer, James Zou, Alexandro E. Trevino<sup>*</sup>, Zhenqin Wu<sup>*</sup>",
+        paperUrl: "https://www.biorxiv.org/content/10.64898/2025.12.10.693553v1",
+        codeUrl: "https://github.com/YAndrewL/Eva",
+        imageUrl: "/images/Eva_model_structure.png",
+        preprint: "Preprint"
+    },
+    {
         year: "2024",
         conference: "Journal of Cheminformatics",
         title: "Protein-small molecule binding site prediction based on a pre-trained protein language model with contrastive learning",
@@ -64,16 +74,7 @@ export const publicationData: Publication[] = [
     //     paperUrl: "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000369",
     //     imageUrl: "/images/plosbio2019.png"
     // },
-    {
-        year: "2025",
-        conference: "bioRxiv",
-        title: "Modeling patient tissues at molecular resolution with Eva",
-        authors: "<strong>Yufan Liu</strong>, Rishabh Sharma, Matthew Bieniosek, Amy Kang, Eric Wu, Peter Chou, Irene Li, Maha Rahim, Erica Bauer, Ran Ji, Wei Duan, Li Qian, Ruibang Luo, Padmanee Sharma, Renu Dhanasekaran, Christian M. Schürch, Gregory Charville, Aaron Mayer, James Zou, Alexandro E. Trevino<sup>*</sup>, Zhenqin Wu<sup>*</sup>",
-        paperUrl: "https://www.biorxiv.org/content/10.64898/2025.12.10.693553v1",
-        codeUrl: "https://github.com/YAndrewL/Eva",
-        imageUrl: "/images/Eva_model_structure.png",
-        preprint: "Preprint"
-    },
+
     // {
     //     year: "2025",
     //     conference: "medRxiv",

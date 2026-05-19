@@ -13,11 +13,11 @@ export enum Section {
 export const sectionOrder = [
     Section.News,
     Section.Publication,
-    Section.Education,
-    Section.Experience,
-    Section.Talks,
-    Section.Awards,
-    Section.Teaching,
-    Section.Service,
-    Section.Mentoring
+    // Section.Education,
+    // Section.Experience,
+    // Section.Talks,
+    // Section.Awards,
+    // Section.Teaching,
+    // Section.Service,
+    // Section.Mentoring,
 ];

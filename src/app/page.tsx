@@ -1,25 +1,25 @@
 "use client"
-import { EducationEntry } from "@/components/education-entry";
-import { educationData } from "@/data/education";
+// import { EducationEntry } from "@/components/education-entry";
+// import { educationData } from "@/data/education";
 import { PublicationEntry } from "@/components/publication-entry";
 import { publicationData } from "@/data/publication";
 import { ProfileSection } from "@/components/profile-section";
 import { aboutMe } from "@/data/aboutme";
 import { NewsEntry } from "@/components/news-entry";
 import { newsData } from "@/data/news";
-import { ExperienceEntry } from "@/components/experience-entry";
-import { experienceData } from "@/data/experience";
-import { AwardsEntry } from "@/components/awards-entry";
-import { awardsData } from "@/data/awards";
-import { TalksEntry } from "@/components/talks-entry";
-import { talksData } from "@/data/talks";
+// import { ExperienceEntry } from "@/components/experience-entry";
+// import { experienceData } from "@/data/experience";
+// import { AwardsEntry } from "@/components/awards-entry";
+// import { awardsData } from "@/data/awards";
+// import { TalksEntry } from "@/components/talks-entry";
+// import { talksData } from "@/data/talks";
 import { sectionOrder, Section } from "@/data/section-order";
-import { TeachingEntry } from "@/components/teaching-entry";
-import { teachingData } from "@/data/teaching";
-import { ServiceEntry } from "@/components/service-entry";
-import { serviceData } from "@/data/service";
-import { MentoringEntry } from "@/components/mentoring-entry";
-import { mentoringData } from "@/data/mentoring";
+// import { TeachingEntry } from "@/components/teaching-entry";
+// import { teachingData } from "@/data/teaching";
+// import { ServiceEntry } from "@/components/service-entry";
+// import { serviceData } from "@/data/service";
+// import { MentoringEntry } from "@/components/mentoring-entry";
+// import { mentoringData } from "@/data/mentoring";
 import { useState } from "react";
 
 export default function Home() {
@@ -83,6 +83,7 @@ export default function Home() {
                                             </section>
                                         )
                                     );
+                                /*
                                 case Section.Education:
                                     return (
                                         educationData.length > 0 && (
@@ -98,6 +99,7 @@ export default function Home() {
                                             </section>
                                         )
                                     );
+                                */
                                 case Section.Publication:
                                     return (
                                         publicationData.length > 0 && (
@@ -121,6 +123,7 @@ export default function Home() {
                                             </section>
                                         )
                                     );
+                                /*
                                 case Section.Experience:
                                     return (
                                         experienceData.length > 0 && (
@@ -128,7 +131,7 @@ export default function Home() {
                                                 <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
                                                     Experience
                                                 </h2>
-                                                <div className="space-y-12">
+                                                <motion.div className="space-y-12">
                                                     {experienceData.map((experience, index) => (
                                                         <ExperienceEntry
                                                             key={index}
@@ -224,6 +227,7 @@ export default function Home() {
                                             </section>
                                         )
                                     );
+                                */
 
                                 default:
                                     return null;

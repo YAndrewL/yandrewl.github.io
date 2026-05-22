@@ -38,9 +38,9 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     return (
         <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
             {aboutMe.imageUrl && (
-                <div className="w-1/3 md:w-full flex-shrink-0">
+                <div className="w-1/3 md:w-full flex-shrink-0 md:flex md:justify-center">
                     <div
-                        className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]"
+                        className="relative w-full md:w-[65%] aspect-square"
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
                     >
@@ -49,7 +49,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                             alt={aboutMe.name}
                             fill
                             priority
-                            className="object-cover rounded-xl transition-opacity duration-300"
+                            className="object-cover object-[50%_20%] rounded-xl transition-opacity duration-300"
                         />
                     </div>
                 </div>

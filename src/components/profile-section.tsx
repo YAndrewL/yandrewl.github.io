@@ -35,29 +35,42 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
         return null;
     }
 
+    const profileImageClassName =
+        "object-cover object-[center_20%] rounded-xl transition-opacity duration-300";
+
+    const profileImage = aboutMe.imageUrl ? (
+        <div
+            className="relative aspect-square w-full"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+        >
+            <Image
+                src={
+                    isHovering && aboutMe.hoverImageUrl
+                        ? aboutMe.hoverImageUrl
+                        : aboutMe.imageUrl
+                }
+                alt={aboutMe.name}
+                fill
+                priority
+                className={profileImageClassName}
+            />
+        </div>
+    ) : null;
+
     return (
-        <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
-            {aboutMe.imageUrl && (
-                <div className="w-1/3 md:w-full flex-shrink-0 md:flex md:justify-center">
-                    <div
-                        className="relative w-full md:w-[65%] aspect-square"
-                        onMouseEnter={() => setIsHovering(true)}
-                        onMouseLeave={() => setIsHovering(false)}
-                    >
-                        <Image
-                            src={isHovering && aboutMe.hoverImageUrl ? aboutMe.hoverImageUrl : aboutMe.imageUrl}
-                            alt={aboutMe.name}
-                            fill
-                            priority
-                            className="object-cover object-[50%_20%] rounded-xl transition-opacity duration-300"
-                        />
+        <div className="md:sticky top-12 flex flex-col gap-4 md:space-y-8">
+            <div className="flex flex-row-reverse md:inline-grid md:w-max md:max-w-full gap-4 md:gap-0 md:mb-8">
+                {profileImage && (
+                    <div className="w-1/3 shrink-0 md:col-start-1 md:row-start-1 md:justify-self-center md:mb-6 md:w-[85%] md:max-w-[220px]">
+                        {profileImage}
                     </div>
-                </div>
-            )}
-            <div className="w-2/3 md:w-full">
-                <h1 className="font-serif text-3xl font-light tracking-wide mb-3">
+                )}
+                <h1 className="w-2/3 md:w-auto font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-2 md:justify-self-start">
                     {aboutMe.name}
                 </h1>
+            </div>
+            <div className="w-full">
                 {aboutMe.altName && (
                     <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-6">
                         {aboutMe.altName}

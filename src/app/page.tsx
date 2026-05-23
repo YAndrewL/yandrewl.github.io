@@ -41,7 +41,7 @@ export default function Home() {
                     </div>
 
                     {/* Right Column - Scrolling Content */}
-                    <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
+                    <div className="col-span-12 md:col-span-8 md:col-start-5 space-y-24">
                         {/* About section is typically first */}
                         {aboutMe.description && (
                             <section>

@@ -34,7 +34,7 @@ export const aboutMe: AboutMe = {
     orcidId: "0009-0007-8781-0282",
     twitterUsername: "yufan_andrew",
     // blogUrl: "https://",
-    cvUrl: "/files/cv.pdf",
+    // cvUrl: "/files/cv.pdf",
     institutionUrl: "https://www.hku.hk",
     // altName: "",
     secretDescription: "The University of Hong Kong",

@@ -59,24 +59,22 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     ) : null;
 
     return (
-        <div className="md:sticky top-12 flex flex-col gap-4 md:space-y-8">
-            <div className="flex flex-row-reverse md:inline-grid md:w-max md:max-w-full gap-4 md:gap-0 md:mb-8">
+        <div className="md:sticky top-12 flex flex-col gap-4 md:gap-5">
+            <div className="flex flex-row-reverse flex-wrap md:inline-grid md:w-max md:max-w-full gap-4 md:gap-0">
                 {profileImage && (
-                    <div className="w-1/3 shrink-0 md:col-start-1 md:row-start-1 md:justify-self-center md:mb-6 md:w-[85%] md:max-w-[220px]">
+                    <div className="w-1/3 shrink-0 md:col-start-1 md:row-start-1 md:justify-self-center md:mb-3 md:w-[85%] md:max-w-[220px]">
                         {profileImage}
                     </div>
                 )}
-                <h1 className="w-2/3 md:w-auto font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-2 md:justify-self-start">
+                <h1 className="w-2/3 md:w-auto font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-3 md:mt-2 md:justify-self-start">
                     {aboutMe.name}
                 </h1>
-            </div>
-            <div className="w-full">
                 {aboutMe.altName && (
-                    <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-6">
+                    <p className="w-full basis-full text-zinc-600 text-md leading-relaxed tracking-wide mb-0 md:col-start-1 md:row-start-4 md:mt-2">
                         {aboutMe.altName}
                     </p>
                 )}
-                <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-6">
+                <p className="w-full basis-full text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-0 md:col-start-1 md:row-start-2 md:mt-2">
                     {aboutMe.title}
                     <br />
                     {aboutMe.institutionUrl ? (
@@ -92,6 +90,9 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                         aboutMe.institution
                     )}
                 </p>
+            </div>
+            <div className="w-full">
+                {(aboutMe.blogUrl || aboutMe.cvUrl) && (
                 <div className="flex gap-6 mb-6">
                     {aboutMe.blogUrl && (
                         <a
@@ -122,6 +123,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                         </a>
                     )}
                 </div>
+                )}
                 <div className="flex gap-4 mb-6">
                     <a
                         href={`mailto:${aboutMe.email}`}

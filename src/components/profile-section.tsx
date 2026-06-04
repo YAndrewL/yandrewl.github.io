@@ -60,21 +60,21 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
 
     return (
         <div className="md:sticky top-12 flex flex-col gap-4 md:gap-5">
-            <div className="flex flex-row-reverse flex-wrap md:inline-grid md:w-max md:max-w-full gap-4 md:gap-0">
+            <div className="flex w-full flex-col items-start gap-4 md:inline-grid md:w-max md:max-w-full md:gap-0">
                 {profileImage && (
-                    <div className="w-1/3 shrink-0 md:col-start-1 md:row-start-1 md:justify-self-center md:mb-3 md:w-[85%] md:max-w-[220px]">
+                    <div className="w-full max-w-[200px] md:col-start-1 md:row-start-1 md:mb-3 md:w-[85%] md:max-w-[220px] md:justify-self-center">
                         {profileImage}
                     </div>
                 )}
-                <h1 className="w-2/3 md:w-auto font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-3 md:mt-2 md:justify-self-start">
+                <h1 className="font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-3 md:mt-2 md:justify-self-start">
                     {aboutMe.name}
                 </h1>
                 {aboutMe.altName && (
-                    <p className="w-full basis-full text-zinc-600 text-md leading-relaxed tracking-wide mb-0 md:col-start-1 md:row-start-4 md:mt-2">
+                    <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-0 md:col-start-1 md:row-start-4 md:mt-2">
                         {aboutMe.altName}
                     </p>
                 )}
-                <p className="w-full basis-full text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-0 md:col-start-1 md:row-start-2 md:mt-2">
+                <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-0 md:col-start-1 md:row-start-2 md:mt-2">
                     {aboutMe.title}
                     <br />
                     {aboutMe.institutionUrl ? (

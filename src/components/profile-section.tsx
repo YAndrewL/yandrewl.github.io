@@ -8,7 +8,6 @@ import {
     GraduationCap,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
-import { useState } from "react";
 
 // Add ORCID icon component
 const OrcidIcon = ({ size = 20, className = "" }) => (
@@ -29,27 +28,17 @@ interface ProfileSectionProps {
 }
 
 export function ProfileSection({ aboutMe }: ProfileSectionProps) {
-    const [isHovering, setIsHovering] = useState(false);
-
     if (!aboutMe) {
         return null;
     }
 
     const profileImageClassName =
-        "object-cover object-[center_20%] rounded-xl transition-opacity duration-300";
+        "object-cover object-[center_20%] rounded-xl";
 
-    const profileImage = aboutMe.imageUrl ? (
-        <div
-            className="relative aspect-square w-full"
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-        >
+    const profileImage = aboutMe.hoverImageUrl ? (
+        <div className="relative aspect-square w-full">
             <Image
-                src={
-                    isHovering && aboutMe.hoverImageUrl
-                        ? aboutMe.hoverImageUrl
-                        : aboutMe.imageUrl
-                }
+                src={aboutMe.hoverImageUrl}
                 alt={aboutMe.name}
                 fill
                 priority

@@ -48,41 +48,38 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     ) : null;
 
     return (
-        <div className="md:sticky top-12 flex flex-col gap-4 md:gap-5">
-            <div className="flex w-full flex-col items-start gap-4 md:inline-grid md:w-max md:max-w-full md:gap-0">
-                {profileImage && (
-                    <div className="w-full max-w-[200px] md:col-start-1 md:row-start-1 md:mb-3 md:w-[85%] md:max-w-[220px] md:justify-self-center">
-                        {profileImage}
-                    </div>
-                )}
-                <h1 className="font-serif text-3xl font-light tracking-wide mb-0 md:col-start-1 md:row-start-3 md:mt-2 md:justify-self-start">
-                    {aboutMe.name}
-                </h1>
-                {aboutMe.altName && (
-                    <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-0 md:col-start-1 md:row-start-4 md:mt-2">
-                        {aboutMe.altName}
-                    </p>
-                )}
-                <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-0 md:col-start-1 md:row-start-2 md:mt-2">
-                    {aboutMe.title}
-                    <br />
-                    {aboutMe.institutionUrl ? (
-                        <a
-                            href={aboutMe.institutionUrl}
-                            className="hover:text-zinc-900 transition-colors duration-300"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {aboutMe.institution}
-                        </a>
-                    ) : (
-                        aboutMe.institution
-                    )}
+        <div className="flex flex-col items-center gap-4 text-center">
+            {profileImage && (
+                <div className="w-full max-w-[200px]">
+                    {profileImage}
+                </div>
+            )}
+            <h1 className="font-serif text-3xl font-light tracking-wide">
+                {aboutMe.name}
+            </h1>
+            {aboutMe.altName && (
+                <p className="text-zinc-600 text-md leading-relaxed tracking-wide">
+                    {aboutMe.altName}
                 </p>
-            </div>
-            <div className="w-full">
-                {(aboutMe.blogUrl || aboutMe.cvUrl) && (
-                <div className="flex gap-6 mb-6">
+            )}
+            <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase">
+                {aboutMe.title}
+                <br />
+                {aboutMe.institutionUrl ? (
+                    <a
+                        href={aboutMe.institutionUrl}
+                        className="hover:text-zinc-900 transition-colors duration-300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {aboutMe.institution}
+                    </a>
+                ) : (
+                    aboutMe.institution
+                )}
+            </p>
+            {(aboutMe.blogUrl || aboutMe.cvUrl) && (
+                <div className="flex justify-center gap-6">
                     {aboutMe.blogUrl && (
                         <a
                             href={aboutMe.blogUrl}
@@ -112,67 +109,66 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                         </a>
                     )}
                 </div>
-                )}
-                <div className="flex gap-4 mb-6">
+            )}
+            <div className="flex justify-center gap-4">
+                <a
+                    href={`mailto:${aboutMe.email}`}
+                    className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Mail size={20} />
+                </a>
+                {aboutMe.googleScholarUrl && (
                     <a
-                        href={`mailto:${aboutMe.email}`}
+                        href={aboutMe.googleScholarUrl}
                         className="text-zinc-600 hover:text-zinc-900 transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Mail size={20} />
+                        <GraduationCap size={20} />
                     </a>
-                    {aboutMe.googleScholarUrl && (
-                        <a
-                            href={aboutMe.googleScholarUrl}
-                            className="text-zinc-600 hover:text-zinc-900 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <GraduationCap size={20} />
-                        </a>
-                    )}
-                    {aboutMe.twitterUsername && (
-                        <a
-                            href={`https://twitter.com/${aboutMe.twitterUsername}`}
-                            className="text-zinc-600 hover:text-zinc-900 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Twitter size={20} />
-                        </a>
-                    )}
-                    {aboutMe.githubUsername && (
-                        <a
-                            href={`https://github.com/${aboutMe.githubUsername}`}
-                            className="text-zinc-600 hover:text-zinc-900 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Github size={20} />
-                        </a>
-                    )}
-                    {aboutMe.linkedinUsername && (
-                        <a
-                            href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
-                            className="text-zinc-600 hover:text-zinc-900 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Linkedin size={20} />
-                        </a>
-                    )}
-                    {aboutMe.orcidId && (
-                        <a
-                            href={`https://orcid.org/${aboutMe.orcidId}`}
-                            className="text-zinc-600 hover:text-zinc-900 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <OrcidIcon size={20} />
-                        </a>
-                    )}
-                </div>
+                )}
+                {aboutMe.twitterUsername && (
+                    <a
+                        href={`https://twitter.com/${aboutMe.twitterUsername}`}
+                        className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Twitter size={20} />
+                    </a>
+                )}
+                {aboutMe.githubUsername && (
+                    <a
+                        href={`https://github.com/${aboutMe.githubUsername}`}
+                        className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Github size={20} />
+                    </a>
+                )}
+                {aboutMe.linkedinUsername && (
+                    <a
+                        href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
+                        className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Linkedin size={20} />
+                    </a>
+                )}
+                {aboutMe.orcidId && (
+                    <a
+                        href={`https://orcid.org/${aboutMe.orcidId}`}
+                        className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <OrcidIcon size={20} />
+                    </a>
+                )}
             </div>
         </div>
     );

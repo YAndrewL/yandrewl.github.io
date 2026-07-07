@@ -28,32 +28,19 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-[#FFFCF8]">
-            {/* Don't have a great call on whether max-w-screen-xl is better */}
-            <div className="max-w-screen-lg mx-auto px-8 py-24">
-                {/* Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
-                    {/* Left Column - Fixed Info */}
-                    <div className="col-span-12 md:col-span-4 space-y-12 mb-8 md:mb-0">
-                        {/* Profile */}
-                        <div className="md:sticky top-12 space-y-8">
-                            <ProfileSection aboutMe={aboutMe} />
-                        </div>
-                    </div>
+            <div className="max-w-2xl mx-auto px-8 py-24 space-y-24 text-center">
+                <ProfileSection aboutMe={aboutMe} />
 
-                    {/* Right Column - Scrolling Content */}
-                    <div className="col-span-12 md:col-span-8 md:col-start-5 space-y-24">
-                        {/* About section is typically first */}
-                        {aboutMe.description && (
-                            <section>
-                                <p
-                                    className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:no-underline [&_a]:text-[#E36C2D] [&_a:hover]:text-[#E36C2D] text-justify"
-                                    dangerouslySetInnerHTML={{ __html: aboutMe.description }}
-                                />
-                            </section>
-                        )}
+                {aboutMe.description && (
+                    <section>
+                        <p
+                            className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:no-underline [&_a]:text-[#E36C2D] [&_a:hover]:text-[#E36C2D] text-justify"
+                            dangerouslySetInnerHTML={{ __html: aboutMe.description }}
+                        />
+                    </section>
+                )}
 
-                        {/* Map through sectionOrder to render sections in correct order */}
-                        {sectionOrder.map((sectionName) => {
+                {sectionOrder.map((sectionName) => {
                             // Most of this is redundant... but in case it needs to be unique.
                             switch (sectionName) {
                                 case Section.News:
@@ -233,8 +220,7 @@ export default function Home() {
                                     return null;
                             }
                         })}
-                    </div>
-                </div>
+
             </div>
         </div>
     );
